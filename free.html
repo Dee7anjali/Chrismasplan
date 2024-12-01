@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateDate() {
+            var dateInput = document.getElementById('date');
+            var errorMessage = document.getElementById('error-message');
+            
+            // Check if date is selected
+            if (!dateInput.value) {
+                // Display error if no date is selected
+                errorMessage.textContent = "Please select a date.";
+                errorMessage.style.color = "red";
+                return false; // Prevent form submission
+            } else {
+                errorMessage.textContent = ""; // Clear any previous error message
+                return true; // Allow form submission
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Are you free on  . . .</h1> <br> <br> <br> <br> <br>
+    <p>(select a date)</p> <br> <br> 
+    <form action="food.html" onsubmit="return validateDate()" style="color: #ff8fa3;">
+        Which day: <input type="date" id="date" name="date"> <br><br>
+        <span id="error-message"></span><br><br> <!-- Placeholder for error message -->
+        <button type="submit" style="color: #ff8fa3; width: 80px; height: 30px; border-radius: 10px;">Submit</button>
+    </form>
+</body>
+</html>

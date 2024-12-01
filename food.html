@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Food Would You Like to Eat?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .card img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card label {
+            font-size: 1rem;
+            color: #555;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #e0554d;
+        }
+    </style>
+</head>
+<body>
+    <h1>What food would you like to eat?</h1>
+    <form action="#" method="post">
+        <div class="container">
+            <!-- Food Card 1 -->
+            <div class="card">
+                <img src="fish.jpeg" alt="sea food">
+                <label>
+                    <input type="checkbox" name="food" value="sea food"> sea food
+                </label>
+            </div>
+            <!-- Food Card 2 -->
+            <div class="card">
+                <img src="french.jpg" alt="french food">
+                <label>
+                    <input type="checkbox" name="food" value="french food"> french food
+                </label>
+            </div>
+            <!-- Food Card 3 -->
+            <div class="card">
+                <img src="sushi.jpg" alt="Sushi">
+                <label>
+                    <input type="checkbox" name="food" value="Sushi"> Sushi
+                </label>
+            </div>
+            <!-- Food Card 4 -->
+            <div class="card">
+                <img src="indian.png" alt="indian food">
+                <label>
+                    <input type="checkbox" name="food" value="indian food"> indian Food
+                </label>
+            </div>
+            <!-- Food Card 5 -->
+            <div class="card">
+                <img src="rice.jpg" alt="Korean Food">
+                <label>
+                    <input type="checkbox" name="food" value="Korean Food"> Korean Food
+                </label>
+            </div>
+        </div>
+    </form>
+    <a href="desert.html"> <button type="submit" class="submit-btn">Submit</button></a>
+</body>
+</html>
